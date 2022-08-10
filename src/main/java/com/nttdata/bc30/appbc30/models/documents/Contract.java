@@ -1,10 +1,9 @@
-package com.nttdata.bc30.models.documents;
+package com.nttdata.bc30.appbc30.models.documents;
 
 import java.math.BigDecimal;
-import java.util.List;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.MongoId;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,16 +18,16 @@ import lombok.NoArgsConstructor;
 public class Contract {
 
 	
-	@MongoId
+	@Id
 	private String id;
 	private String nroContract;//0001000
 	private Customer customer; // cliente, X1 // Empresa SAC EIRL
-	private List<Person> authorizedSignatories; //firmantesAutorizados. C,D
+//	private List<Person> authorizedSignatories; //firmantesAutorizados. C,D
 	private Product product; // Pasivos/Activos
 	private BigDecimal saldoDisponible;
 	private Boolean isActive;
 	
-	List<ContractOperations> lstOperaciones; // Operaciones/movimientos - Libro Transacciones - ContractBookTransaccions
+//	List<ContractOperations> lstOperaciones; // Operaciones/movimientos - Libro Transacciones - ContractBookTransaccions
 	 
 	
 	 

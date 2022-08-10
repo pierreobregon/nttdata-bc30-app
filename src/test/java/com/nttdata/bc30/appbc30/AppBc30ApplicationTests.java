@@ -3,11 +3,12 @@ package com.nttdata.bc30.appbc30;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+//@RunWith(SpringRunner.class)
 @SpringBootTest
-class AppBc30ApplicationTests {
+public class AppBc30ApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 	}
 
 }

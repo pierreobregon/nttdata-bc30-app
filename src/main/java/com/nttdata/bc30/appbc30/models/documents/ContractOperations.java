@@ -1,24 +1,19 @@
-package com.nttdata.bc30.models.documents;
+package com.nttdata.bc30.appbc30.models.documents;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.MongoId;
-
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
+/*
 @Builder
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor*/
 @Document(collection="contractOperations")
 public class ContractOperations {
 
-	@MongoId
+	@Id
 	private String id;
 	private Integer movementNumber;//Autogenerado
 	private String channel;//ATM, Oficina, App, web, telefonico.
